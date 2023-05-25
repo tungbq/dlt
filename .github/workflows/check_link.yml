@@ -16,7 +16,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1.8.0
         with:
-          args: "--accept ERR"
+          args: "--exclude-all-private"
   
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
